@@ -10,6 +10,6 @@ phases:
       - cd $CODEBUILD_SRC_DIR; npm run build
   post_build:
     commands:
-      - - aws s3 cp build https://s3.ap-south-1.amazonaws.com/abi-brgrbldr --recursive
+      - aws s3 cp build https://s3.ap-south-1.amazonaws.com/abi-brgrbldr --recursive
 artifacts:
   discard-paths: yes
